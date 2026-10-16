@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 全局基础样式：深色主题 */
+body {
+  @apply bg-night text-ink antialiased;
+}
+
+/* 平滑锚点滚动（尊重用户"减少动画"偏好） */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
